@@ -1,6 +1,6 @@
 import { Admin, Resource, ListGuesser, PrevNextButtonClasses } from "react-admin";
 import {PocketBaseProvider} from './ra-pocketbase';
-import { PostList, PostShow } from "./Runners";
+import {RunnerList, RunnerShow } from "./Runners";
 
 
 import { Dashboard } from './Dashboard';
@@ -13,7 +13,7 @@ const App = () => (
   dashboard={Dashboard}
   dataProvider={pbProvider.dataProvider}
   authProvider={pbProvider.authProvider}>
-  <Resource name="Runners" list={PostList}  show={PostShow}/>
+  <Resource name="Runners" list={RunnerList}  show={RunnerShow}/>
   </Admin>
 );
 

@@ -1,19 +1,15 @@
 import { List,SelectInput, Datagrid, TextField, DateField, ImageField, Show, SimpleShowLayout,ReferenceField } from 'react-admin';
 
-export const PostList = () => (
+export const RunnerList = () => (
     <List>
         <Datagrid>
             <TextField source="nickname" />
-            <SelectInput source="decision" choices={[
-    { id: 'Accept', name: 'Accepted' },
-    { id: 'Decline', name: 'Declined' },
-    { id: 'people', name: 'People' },
-]} />
+            <TextField source="decision" />
         </Datagrid>
     </List>
 );
 
-export const PostShow = () => (
+export const RunnerShow = () => (
     <Show>
         <SimpleShowLayout>
             <TextField source="nickname" />
